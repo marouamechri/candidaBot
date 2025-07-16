@@ -47,7 +47,7 @@ Ce projet repose sur les technologies et bibliothèques suivantes :
 
 ## 📧 Relance automatique
 Si aucun retour n’est détecté après 14 jours et qu'aucune réponse n’est trouvée en lien avec le même objet, un mail de relance est automatiquement envoyé à l’expéditeur.
-text
+```text
 Copier
 Modifier
 Objet : Relance – [Objet original]
@@ -60,6 +60,7 @@ Je reste très motivée par l’opportunité et disponible pour toute informatio
 
 Cordialement,
 
+```
 ## 🔐 Configuration
 Crée un fichier .env avec les variables suivantes :
 
@@ -80,7 +81,7 @@ SMTP_PASSWORD=ton_mot_de_passe
 Copier
 Modifier
 python candidabut.py
-
+```
 ## 📌 Pourquoi ce projet ?
 Je suis en pleine recherche d’emploi et je voulais un outil utile, fait pour moi, par moi.
 Plutôt que d’entrer chaque candidature manuellement, je voulais un assistant automatique, intelligent et simple à utiliser.
