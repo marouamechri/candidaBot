@@ -9,11 +9,11 @@ C’est pour ça que j’ai créé ce robot qui lit ma boîte mail, analyse les 
 
 - 🧠 Détection intelligente du contenu des mails :
 
-  Réponse positive (ex: "entretien", "sélectionné")
+  Réponse positive ("Positif", "À traiter")
 
-  Réponse négative (ex: "refus", "non retenu")
+  Réponse négative ("Refusé")
 
-  Candidature envoyée
+  Candidature envoyée ("Envoyée")
 
 - ❌ Filtrage des mails non pertinents (alertes, newsletters…)
 
@@ -27,10 +27,12 @@ C’est pour ça que j’ai créé ce robot qui lit ma boîte mail, analyse les 
 
 
 ## 📁 Structure du fichier Excel
-```tab
-Date	Expéditeur	Objet	Statut détecté	Aperçu	Type	Date de relance
-2025-07-10	recruteur@…	Candidature Dev	Positif	Merci pour…	Réponse	-
-```
+
+| Date       | Expéditeur      | Objet           | Statut détecté | Aperçu       | Type     | Date de relance |
+|------------|-----------------|-----------------|----------------|--------------|----------|-----------------|
+| 2025-07-10 | recruteur@…     | Candidature Dev | Positif        | Merci pour…  | Réponse  | -               |
+
+
 ## 🛠️ Technologies utilisées
 Ce projet repose sur les technologies et bibliothèques suivantes :
 
@@ -86,5 +88,3 @@ Ce projet me permet aussi de pratiquer Python tout en créant une vraie solution
 ## 🧑‍💻 Auteure
 Mechri Maroua
 Développeuse Full Stack passionnée par les projets utiles et les défis techniques 🚀
-
-```
