@@ -33,19 +33,23 @@ Date	Expéditeur	Objet	Statut détecté	Aperçu	Type	Date de relance
 ## 🛠️ Technologies utilisées
 Ce projet repose sur les technologies et bibliothèques suivantes :
 
-### Python 3.x – Langage principal utilisé pour développer le script.
+- Python 3.x – Langage principal utilisé pour développer le script.
 
-### imap-tools – Permet de se connecter à une boîte mail IMAP et de lire les messages.
+- imap-tools – Permet de se connecter à une boîte mail IMAP et de lire les messages.
 
-### pandas – Utilisé pour manipuler les données et gérer le fichier Excel.
+- pandas – Utilisé pour manipuler les données et gérer le fichier Excel.
 
-### openpyxl – Sert à lire et écrire des fichiers Excel (.xlsx).
+- openpyxl – Sert à lire et écrire des fichiers Excel (.xlsx).
 
-### python-dotenv – Pour charger les variables d’environnement depuis un fichier .env.
+- python-dotenv – Pour charger les variables d’environnement depuis un fichier .env.
 
-### python-dateutil – Fournit des extensions puissantes pour manipuler des objets datetime.
+- python-dateutil – Fournit des extensions puissantes pour manipuler des objets datetime.
 
-## 📧 Relance automatique
+📁 Structure du fichier Excel
+Date	Expéditeur	Objet	Statut détecté	Aperçu	Type	Date de relance
+2025-07-10	recruteur@…	Candidature Dev	Positif	Merci pour…	Réponse	-
+
+📧 Relance automatique
 Si aucun retour n’est détecté après 14 jours et qu'aucune réponse n’est trouvée en lien avec le même objet, un mail de relance est automatiquement envoyé à l’expéditeur.
 
 text
@@ -60,8 +64,7 @@ Je me permets de revenir vers vous concernant ma candidature envoyée il y a deu
 Je reste très motivée par l’opportunité et disponible pour toute information complémentaire.
 
 Cordialement,
-
-## 🔐 Configuration
+🔐 Configuration
 Crée un fichier .env avec les variables suivantes :
 
 env
@@ -75,12 +78,12 @@ SMTP_SERVER=smtp.exemple.com
 SMTP_PORT=587
 SMTP_EMAIL=ton_email@example.com
 SMTP_PASSWORD=ton_mot_de_passe
-
 ▶️ Lancer le script
 bash
 Copier
 Modifier
-python suivi_mails.py
+python candidabut.py
+
 
 ## 📌 Pourquoi ce projet ?
 Je suis en pleine recherche d’emploi et je voulais un outil utile, fait pour moi, par moi.
