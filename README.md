@@ -45,13 +45,8 @@ Ce projet repose sur les technologies et bibliothèques suivantes :
 
 - python-dateutil – Fournit des extensions puissantes pour manipuler des objets datetime.
 
-📁 Structure du fichier Excel
-Date	Expéditeur	Objet	Statut détecté	Aperçu	Type	Date de relance
-2025-07-10	recruteur@…	Candidature Dev	Positif	Merci pour…	Réponse	-
-
-📧 Relance automatique
+## 📧 Relance automatique
 Si aucun retour n’est détecté après 14 jours et qu'aucune réponse n’est trouvée en lien avec le même objet, un mail de relance est automatiquement envoyé à l’expéditeur.
-
 text
 Copier
 Modifier
@@ -64,10 +59,11 @@ Je me permets de revenir vers vous concernant ma candidature envoyée il y a deu
 Je reste très motivée par l’opportunité et disponible pour toute information complémentaire.
 
 Cordialement,
-🔐 Configuration
+
+## 🔐 Configuration
 Crée un fichier .env avec les variables suivantes :
 
-env
+```env
 Copier
 Modifier
 EMAIL_ADDRESS=ton_email@example.com
@@ -78,12 +74,12 @@ SMTP_SERVER=smtp.exemple.com
 SMTP_PORT=587
 SMTP_EMAIL=ton_email@example.com
 SMTP_PASSWORD=ton_mot_de_passe
+```
 ▶️ Lancer le script
-bash
+```bash
 Copier
 Modifier
 python candidabut.py
-
 
 ## 📌 Pourquoi ce projet ?
 Je suis en pleine recherche d’emploi et je voulais un outil utile, fait pour moi, par moi.
@@ -95,3 +91,4 @@ Ce projet me permet aussi de pratiquer Python tout en créant une vraie solution
 Mechri Maroua
 Développeuse Full Stack passionnée par les projets utiles et les défis techniques 🚀
 
+```
