@@ -27,9 +27,10 @@ C’est pour ça que j’ai créé ce robot qui lit ma boîte mail, analyse les 
 
 
 ## 📁 Structure du fichier Excel
+```tab
 Date	Expéditeur	Objet	Statut détecté	Aperçu	Type	Date de relance
 2025-07-10	recruteur@…	Candidature Dev	Positif	Merci pour…	Réponse	-
-
+```
 ## 🛠️ Technologies utilisées
 Ce projet repose sur les technologies et bibliothèques suivantes :
 
@@ -48,8 +49,6 @@ Ce projet repose sur les technologies et bibliothèques suivantes :
 ## 📧 Relance automatique
 Si aucun retour n’est détecté après 14 jours et qu'aucune réponse n’est trouvée en lien avec le même objet, un mail de relance est automatiquement envoyé à l’expéditeur.
 ```text
-Copier
-Modifier
 Objet : Relance – [Objet original]
 
 Bonjour,
@@ -65,8 +64,6 @@ Cordialement,
 Crée un fichier .env avec les variables suivantes :
 
 ```env
-Copier
-Modifier
 EMAIL_ADDRESS=ton_email@example.com
 EMAIL_PASSWORD=ton_mot_de_passe
 IMAP_SERVER=imap.exemple.com
@@ -78,8 +75,6 @@ SMTP_PASSWORD=ton_mot_de_passe
 ```
 ▶️ Lancer le script
 ```bash
-Copier
-Modifier
 python candidabut.py
 ```
 ## 📌 Pourquoi ce projet ?
